@@ -1,0 +1,131 @@
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 2em;
+  margin: 0px;
+  width: 40%;
+}
+
+.login_heading {
+  color: black;
+  font-weight: 700;
+  font-size: 4em;
+  margin: 0px;
+}
+
+.login_subheading {
+  color: gray;
+  font-weight: 600;
+}
+
+.login_input {
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  border-radius: 4px;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+
+.login_input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.login_btn {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  width: 80%;
+  margin-top: 1em;
+  background-color: #023047;
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.login_btn:focus {
+  outline: none;
+}
+
+.credentials_action_container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.remember_credentials_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.remember_credentials_container > label {
+  margin: 0px;
+  font-weight: 600;
+}
+
+.password_checkbox {
+  accent-color: #023047;
+  margin-right: 5px;
+}
+
+.forgot_password_btn {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 600;
+}
+
+.forgot_password_btn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .main_container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main_container {
+    padding: 0em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .login_heading {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .login_heading {
+    font-size: 1.4em;
+  }
+  .login_subheading {
+    font-size: 0.8em;
+  }
+  .login_btn {
+    padding: 0.5em;
+  }
+  .login_input {
+    padding: 0.5em;
+  }
+  .remember_credentials_container > label {
+    font-size: 0.7em;
+  }
+  .forgot_password_btn {
+    font-size: 0.7em;
+  }
+}

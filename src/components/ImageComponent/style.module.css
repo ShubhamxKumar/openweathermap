@@ -1,0 +1,15 @@
+.main_container {
+  flex-grow: 1;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../../static/images/team.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1350px) {
+  .main_container {
+    width: 0%;
+  }
+}
